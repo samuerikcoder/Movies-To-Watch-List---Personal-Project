@@ -27,7 +27,7 @@ export class Movies {
                 throw new Error('Movie not found: check the title and/or year and try again!')
             }
             this.movies = [movie, ...this.movies];
-            this.save();
+            this.register();
             this.refresh();
         }
         catch(error) {
