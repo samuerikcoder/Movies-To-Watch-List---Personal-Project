@@ -1,4 +1,4 @@
-import { SECRET_API_KEY } from "./apikey.js";
+import SECRET_API_KEY from "./apikey.js";
 
 export class MoviesData {
     static get(movieName, movieYear='') {
