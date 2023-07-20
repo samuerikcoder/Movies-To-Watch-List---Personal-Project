@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies To Watch List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" type="module" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Tektur:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="confirm-box close">
+        <div class="modal">
+            <div class="modal-header">
+                <img src="img/thinking-face-svgrepo-com.svg" alt="">
+                <h2>Warning</h2>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to mark this movie as watched? After that it will be deleted!</p>
+            </div>
+            <div class="modal-footer">
+                <button class="confirm-button">Yes</button>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-box close">
+        <div class="modal">
+            <div class="modal-header">
+                <img src="img/movie-recorder-svgrepo-com.svg" alt="">
+                <h2>Error Warning</h2>
+            </div>
+            <div class="modal-body">
+                <p></p>
+            </div>
+            <div class="modal-footer">
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h1>
+                Movies To Watch List
+            </h1>
+        </div>
+
+        <div class="controls container">
+            <div class="grid-wrapper">
+
+                <div class="input-wrapper">
+                    <label class="sr-only" for="movie-name">Movie Name: </label>
+                    <input type="text" id="movie-name" placeholder="Name">
+                </div>
+                
+                <div class="input-wrapper">
+                    <label class="sr-only" for="movie-year">Movie Year: </label>
+                    <input type="text" id="movie-year" placeholder="Year">
+                </div>
+                
+            <button class="send" aria-label="search movie">
+                <img src="img/double-arrow.svg" alt="two right arrows">
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="table-responsive">
+            <table>
+                <caption class="sr-only">Table Movies to Watch</caption>
+                <thead>
+                    <tr>
+                        <th>Poster</th>
+                        <th>Movie</th>
+                        <th>Genre</th>
+                        <th>Relased</th>
+                        <th>Type</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                    </tr>
+                </tbody>
+        </table>
+        </div>
+        
+    </main>
+
+</body>
+</html>
