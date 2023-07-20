@@ -1,5 +1,8 @@
 # Movies To Watch List - Projeto Pessoal
 
+## Site Link: 
+[Movies To Watch List](https://moviestowatchlist.netlify.app/)
+
 ## Select your language:
 - [Portuguese](#Portuguese) | [English](#English) | [Spanish](#Spanish)
 
@@ -13,7 +16,12 @@ Durante o desenvolvimento da aplicação, foram priorizados aspectos como acessi
 O projeto tem como objetivo permitir ao usuário registrar filmes que deseja assistir em algum momento, por meio da barra de pesquisa, onde é possível pesquisar por Título e Ano (opcional). Ao clicar no botão de envio, os dados são enviados como requisição para a API, que retorna as informações na tabela. O botão com o texto "Watched", presente em cada linha da tabela, permite a exclusão do filme com a confirmação do usuário.
 
 ## Uso
-Caso queira utilizar o projeto em sua máquina, será necessário visitar o site da [OMDb](https://www.omdbapi.com/) e se registrar gratuitamente para obter a API KEY. Crie um arquivo na pasta 'js' e importe a constante com a sua chave para o arquivo 'moviesdata.js'.
+Caso queira utilizar o projeto em sua máquina, será necessário visitar o site da [OMDb](https://www.omdbapi.com/) e se registrar gratuitamente para obter a API KEY. Crie um arquivo chamado 'apikey.js' na pasta 'js' e importe a constante com a sua chave para o arquivo 'moviesdata.js'.
+Em apikey.js:
+``` 
+const SECRET_API_KEY = 'sua_api_key_aqui';
+export default SECRET_API_KEY;
+```
 
 ## Imagens
 ![](Screenshots/mainscreenshot.png)
@@ -39,10 +47,15 @@ Throughout the application's development, aspects like accessibility, responsive
 The project aims to allow users to record movies they want to watch at some point, using the search bar, where it's possible to search by Title and Year (optional). Upon clicking the submit button, the data is sent as a request to the API, which returns the information in a table. The "Watched" button, present in each table row, allows the user to delete the movie with user confirmation.
 
 ## Usage
-If you want to use the project on your machine, you will need to visit the [OMDb website](https://www.omdbapi.com/) and register for free to obtain the API KEY. Create a file in the 'js' folder and import the constant with your key into the 'moviesdata.js' file.
+If you want to use the project on your machine, you will need to visit the [OMDb website](https://www.omdbapi.com/) and register for free to obtain the API KEY. Create a 'apikey.js' file in the 'js' folder and import the constant with your key into the 'moviesdata.js' file.
+
+``` 
+const SECRET_API_KEY = 'your_api_key_here';
+export default SECRET_API_KEY;
+```
 
 ## Images
-![](Screenshots/mainscreenshot.png)
+![](Screenshots/mainscreenshot.png)gith
 ![](Screenshots/modalscreenshot.png)
 ![](Screenshots/confirmscreenshot.png)
 
@@ -63,8 +76,14 @@ Durante el desarrollo de la aplicación, se priorizaron aspectos como accesibili
 ## Aplicación del Proyecto
 El objetivo del proyecto es permitir que los usuarios registren películas que desean ver en algún momento, utilizando la barra de búsqueda, donde es posible buscar por Título y Año (opcional). Al hacer clic en el botón de envío, los datos se envían como solicitud a la API, que devuelve la información en una tabla. El botón "Watched" presente en cada fila de la tabla permite eliminar la película con la confirmación del usuario.
 
+
 ## Uso
-Si deseas utilizar el proyecto en tu máquina, será necesario visitar el sitio web de [OMDb](https://www.omdbapi.com/) y registrarte de forma gratuita para obtener la API KEY. Crea un archivo en la carpeta 'js' e importa la constante con tu clave en el archivo 'moviesdata.js'.
+Si deseas utilizar el proyecto en tu máquina, será necesario visitar el sitio web de [OMDb](https://www.omdbapi.com/) y registrarte de forma gratuita para obtener la API KEY. Crea un archivo 'apikey.js' en la carpeta 'js' e importa la constante con tu clave en el archivo 'moviesdata.js'.
+
+``` 
+const SECRET_API_KEY = 'tu_api_key_aquí';
+export default SECRET_API_KEY;
+```
 
 ## Imágenes
 ![](Screenshots/mainscreenshot.png)
